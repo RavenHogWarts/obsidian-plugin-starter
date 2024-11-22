@@ -1,6 +1,8 @@
 import esbuild from "esbuild";
 import process from "process";
 import builtins from "builtin-modules";
+import fs from "fs";
+import path from "path";
 
 const banner =
 `/*
@@ -11,12 +13,30 @@ if you want to view the source, please visit the github repository of this plugi
 
 const prod = (process.argv[2] === "production");
 
+const renamePlugin = () => ({
+	name: "rename-plugin",
+	setup(build) {
+		build.onEnd(async (result) => {
+			const file = build.initialOptions.outfile;
+			const parent = path.dirname(file);
+			const cssFileName = parent + "/main.css";
+			const newCssFileName = parent + "/styles.css";
+			try {
+				fs.renameSync(cssFileName, newCssFileName);
+			} catch (e) {
+				console.error("Failed to rename file:", e);
+			}
+		});
+	},
+});
+
 const context = await esbuild.context({
 	banner: {
 		js: banner,
 	},
 	entryPoints: ["src/main.ts"],
 	bundle: true,
+	plugins: [renamePlugin()],
 	external: [
 		"obsidian",
 		"electron",
@@ -38,6 +58,8 @@ const context = await esbuild.context({
 	sourcemap: prod ? false : "inline",
 	treeShaking: true,
 	outfile: "main.js",
+	minify: prod,
+	drop: prod ? ["console"] : [],
 });
 
 if (prod) {
