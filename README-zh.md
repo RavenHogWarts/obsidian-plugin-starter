@@ -52,7 +52,7 @@
 
 ## Star 历史
 
-[![Star 历史图表](https://api.star-history.com/svg?repos=RavenHogWarts/
+[![Star 历史图表](https://api.star-history.com/svg?repos=RavenHogWarts/obsidian-plugin-starter&type=Timeline)](https://www.star-history.com/#RavenHogWarts/obsidian-plugin-starter&Timeline)
 
 # 需要修改的文件
 在开发或自定义插件时，以下文件可能需要修改：
