@@ -110,8 +110,8 @@ function updateAllFiles(version, isBeta = false) {
 		} else {
 			console.log(`git add package.json manifest.json versions.json`);
 		}
-		console.log(`git commit -m "chore: bump version to ${version}"`);
-		console.log(`git tag v${version}`);
+		console.log(`git commit -m "build: bump version to ${version}"`);
+		console.log(`git tag ${version}`);
 
 		console.log("\n版本更新完成！");
 	} catch (error) {
