@@ -1,10 +1,10 @@
-# Contributing to xxx English Version
+# Contributing to (your plugin name) English Version
 
-Thank you for your interest in contributing to xxx! This document provides guidelines and instructions for contributing to this project.
+Thank you for your interest in contributing to (your plugin name)! This document provides guidelines and instructions for contributing to this project.
 
 ## Table of Contents
 
-- [Contributing to xxx English Version](#contributing-to-xxx-english-version)
+- [Contributing to (your plugin name) English Version](#contributing-to-your-plugin-name-english-version)
   - [Table of Contents](#table-of-contents)
   - [Code of Conduct](#code-of-conduct)
   - [Getting Started](#getting-started)
