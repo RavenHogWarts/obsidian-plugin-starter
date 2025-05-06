@@ -16,14 +16,14 @@
 ### 手动安装
 
 1. 下载最新版本
-2. 将 `main.js`、`styles.css` 和 `manifest.json` 复制到你的仓库插件文件夹中：`<vault>/.obsidian/plugins/obsidian-sample-plugin/`
+2. 将 `main.js`、`styles.css` 和 `manifest.json` 复制到你的仓库插件文件夹中：`<vault>/.obsidian/plugins/obsidian-plugin-starter/`
 3. 重新加载 Obsidian
 4. 在设置 → 社区插件中启用插件
 
 ### BRAT（推荐给测试用户）
 1. 安装 [BRAT](https://github.com/TfTHacker/obsidian42-brat) 插件
 2. 在 BRAT 设置中点击“添加测试插件”
-3. 输入 `RavenHogWarts/obsidian-sample-plugin`
+3. 输入 `RavenHogWarts/obsidian-plugin-starter`
 4. 启用插件
 
 ## 开发指南
@@ -57,19 +57,9 @@
 # 需要修改的文件
 在开发或自定义插件时，以下文件可能需要修改：
 
-## [config.yml](./.github/ISSUE_TEMPLATE/config.yml)
-- url
-
-## [release.yml](./.github/workflows/release.yml)
-- 插件名称 xxx
-
-## [manifest.json](./manifest.json)
-- 作者
-- 捐赠链接
-
-## [manifest-beta.json](./manifest-beta.json)
-- 作者
-- 捐赠链接
-
-## [package.json](./package.json)
-- 作者
+- [config.yml](./.github/ISSUE_TEMPLATE/config.yml)
+- [release.yml](./.github/workflows/release.yml)
+- [manifest.json](./manifest.json)
+- [manifest-beta.json](./manifest-beta.json)
+- [package.json](./package.json)
+- [CONTRIBUTING.md](./CONTRIBUTING.md)

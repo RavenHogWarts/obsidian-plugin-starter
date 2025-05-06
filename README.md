@@ -16,14 +16,14 @@ The repo depends on the latest plugin API (obsidian.d.ts) in Typescript Definiti
 ### Manual Installation
 
 1. Download the latest release
-2. Copy `main.js`, `styles.css`, and `manifest.json` to your vault's plugins folder: `<vault>/.obsidian/plugins/obsidian-sample-plugin/`
+2. Copy `main.js`, `styles.css`, and `manifest.json` to your vault's plugins folder: `<vault>/.obsidian/plugins/obsidian-plugin-starter/`
 3. Reload Obsidian
 4. Enable the plugin in Settings → Community Plugins
 
 ### BRAT (Recommended for Beta Users)
 1. Install [BRAT](https://github.com/TfTHacker/obsidian42-brat) plugin
 2. Click "Add Beta plugin" in BRAT settings
-3. Enter `RavenHogWarts/obsidian-sample-plugin`
+3. Enter `RavenHogWarts/obsidian-plugin-starter`
 4. Enable the plugin
 
 ## Development
@@ -57,19 +57,9 @@ This project is licensed under the xxx LICENSE - see the [LICENSE](LICENSE) file
 # Files to Modify
 When developing or customizing the plugin, the following files may need to be modified:
 
-## [config.yml](./.github/ISSUE_TEMPLATE/config.yml)
-- URL
-
-## [release.yml](./.github/workflows/release.yml)
-- Plugin name xxx
-
-## [manifest.json](./manifest.json)
-- Author
-- Donation link
-
-## [manifest-beta.json](./manifest-beta.json)
-- Author
-- Donation link
-
-## [package.json](./package.json)
-- Author
+- [config.yml](./.github/ISSUE_TEMPLATE/config.yml)
+- [release.yml](./.github/workflows/release.yml)
+- [manifest.json](./manifest.json)
+- [manifest-beta.json](./manifest-beta.json)
+- [package.json](./package.json)
+- [CONTRIBUTING.md](./CONTRIBUTING.md)
