@@ -21,6 +21,7 @@ The repo depends on the latest plugin API (obsidian.d.ts) in Typescript Definiti
 4. Enable the plugin in Settings → Community Plugins
 
 ### BRAT (Recommended for Beta Users)
+
 1. Install [BRAT](https://github.com/TfTHacker/obsidian42-brat) plugin
 2. Click "Add Beta plugin" in BRAT settings
 3. Enter `RavenHogWarts/obsidian-plugin-starter`

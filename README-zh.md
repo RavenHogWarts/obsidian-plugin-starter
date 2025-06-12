@@ -21,6 +21,7 @@
 4. 在设置 → 社区插件中启用插件
 
 ### BRAT（推荐给测试用户）
+
 1. 安装 [BRAT](https://github.com/TfTHacker/obsidian42-brat) 插件
 2. 在 BRAT 设置中点击“添加测试插件”
 3. 输入 `RavenHogWarts/obsidian-plugin-starter`
