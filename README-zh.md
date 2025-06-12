@@ -13,6 +13,14 @@
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/RavenHogWarts/obsidian-plugin-starter?style=flat&label=最后提交)](https://github.com/RavenHogWarts/obsidian-plugin-starter/commits/master)
 
 ## 安装
+### 社区插件市场安装
+
+[点击安装](obsidian://show-plugin?id=obsidian-plugin-starter)，或按以下步骤操作：
+
+1. 打开 Obsidian 并前往 `设置 > 第三方插件`。
+2. 搜索 “obsidian-plugin-starter”。
+3. 点击 “安装”。
+
 ### 手动安装
 
 1. 下载最新版本

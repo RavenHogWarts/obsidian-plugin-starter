@@ -13,6 +13,14 @@ The repo depends on the latest plugin API (obsidian.d.ts) in Typescript Definiti
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/RavenHogWarts/obsidian-plugin-starter?style=flat&label=Last%20Commit)](https://github.com/RavenHogWarts/obsidian-plugin-starter/commits/master)
 
 ## Installation
+### Community plugin market installation
+
+[Click to install](obsidian://show-plugin?id=obsidian-plugin-starter), or:
+
+1. Open Obsidian and go to `Settings > Community Plugins`.
+2. Search for "Obsidian Plugin Starter".
+3. Click "Install".
+
 ### Manual Installation
 
 1. Download the latest release
