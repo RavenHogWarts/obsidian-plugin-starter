@@ -1,5 +1,5 @@
 import { App, Editor, MarkdownView, Modal, Notice, Plugin, PluginSettingTab, Setting } from 'obsidian';
-import '../style/styles.css';
+import '@style/styles	';
 
 // Remember to rename these classes and interfaces!
 
