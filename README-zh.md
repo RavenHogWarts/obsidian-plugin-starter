@@ -1,4 +1,4 @@
-中文 | [English](./README.md)
+中文 | [English](https://github.com/RavenHogWarts/obsidian-plugin-starter/blob/master/README.md)
 
 # Obsidian 示例插件
 这是一个用于 Obsidian (https://obsidian.md) 的示例插件。

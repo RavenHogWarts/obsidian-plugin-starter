@@ -1,4 +1,4 @@
-English | [中文](./README-zh.md)
+English | [中文](https://github.com/RavenHogWarts/obsidian-plugin-starter/blob/master/README-zh.md)
 
 # Obsidian Sample Plugin
 This is a sample plugin for Obsidian (https://obsidian.md).
