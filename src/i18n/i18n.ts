@@ -15,7 +15,7 @@ export class I18n {
 	private constructor() {
 		const lang = getLanguage();
 
-		this.currentLocale = lang;
+		this.currentLocale = this.translations[lang] ? lang : "en";
 		this.flattenTranslations();
 	}
 
