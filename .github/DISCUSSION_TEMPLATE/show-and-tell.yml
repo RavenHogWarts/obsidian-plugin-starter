@@ -82,12 +82,8 @@ body:
       attributes:
           label: "使用说明 | Usage Instructions"
           description: "提供详细的使用说明和配置示例 | Provide detailed usage instructions and configuration examples"
-          placeholder: |
+          value: |
               ### 使用方法 | How to Use
-              1. 打开Form Flow面板
-              2. 选择对应表单
-              3. 填写相关信息
-              4. 点击提交生成内容
 
               ### 配置示例 | Configuration Example
               ```
