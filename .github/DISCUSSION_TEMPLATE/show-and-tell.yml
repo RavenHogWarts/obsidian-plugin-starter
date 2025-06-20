@@ -1,5 +1,5 @@
-title: "[Form Flow Share] "
-labels: ["Form Flow", "Share", "Show and Tell"]
+title: "[Form Flow Share] Your Form Flow Name"
+labels: ["Show and Tell"]
 body:
     - type: markdown
       attributes:
@@ -28,23 +28,25 @@ body:
       validations:
           required: true
 
-    - type: input
+    - type: textarea
       id: obsidian-version
       attributes:
           label: "Obsidian 兼容版本 | Obsidian Compatible Version"
           description: "请输入支持的Obsidian最低版本"
           placeholder: "v1.8.0+"
           value: "v1.8.0+"
+          render: markdown
       validations:
           required: true
 
-    - type: input
+    - type: textarea
       id: formflow-version
       attributes:
           label: "Form Flow 兼容版本 | Form Flow Compatible Version"
           description: "请输入支持的Form Flow最低版本"
           placeholder: "v0.0.2+"
           value: "v0.0.2+"
+          render: markdown
       validations:
           required: true
 
@@ -53,8 +55,8 @@ body:
           value: |
               ## 📎 文件上传说明 | File Upload Instructions
 
-              请在创建讨论后，将您的表单包文件拖拽到讨论内容中上传。
-              Please drag and drop your form package file into the discussion content after creating the discussion.
+              请在下方`文件清单`编辑中，将在指定位置上传替换您的表单包文件。
+              Please upload your form package file into the specified position in the `File List` edit area.
 
               **推荐文件命名格式 | Recommended file naming format:**
               - 主文件：`FormName.cform`
