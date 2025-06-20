@@ -9,15 +9,6 @@ body:
               欢迎分享您的Form Flow表单！请填写以下信息帮助社区成员了解和使用您的表单。
               Welcome to share your Form Flow forms! Please fill in the following information to help community members understand and use your forms.
 
-    - type: input
-      id: form-name
-      attributes:
-          label: "表单名称 | Form Name"
-          description: "请输入您要分享的表单名称"
-          placeholder: "例如：Insert Callout"
-      validations:
-          required: true
-
     - type: textarea
       id: form-description
       attributes:
@@ -66,8 +57,8 @@ body:
               Please drag and drop your form package file into the discussion content after creating the discussion.
 
               **推荐文件命名格式 | Recommended file naming format:**
-              - 主文件：`FormName.cform` 或 `FormName.form`
-              - 脚本文件：`form-formname.js`
+              - 主文件：`FormName.cform`
+              - 脚本文件：`ScriptName.js`
               - 打包文件：`FormName.zip`
 
     - type: textarea
@@ -75,12 +66,12 @@ body:
       attributes:
           label: "文件清单 | File List"
           description: "列出您将要上传的文件 | List the files you will upload"
-          placeholder: |
+          value: |
+              [这里上传zip文件](attachment.zip)
               包含文件 | Included files:
               - `FormName.cform` (主表单文件 | Main form file)
               - `ScriptName.js` (表单脚本 | Form script)
               - `README.md` (可选，使用说明 | Optional, instructions)
-          render: markdown
       validations:
           required: true
 
@@ -90,14 +81,6 @@ body:
           label: "使用说明 | Usage Instructions"
           description: "提供详细的使用说明和配置示例 | Provide detailed usage instructions and configuration examples"
           placeholder: |
-              ## 使用说明 | Usage Instructions
-
-              ### 安装步骤 | Installation Steps
-              1. 下载并解压文件包
-              2. 将 `.cform` 文件放入Form Flow表单目录
-              3. 将 `.js` 文件放入表单脚本目录（如果有）
-              4. 重新加载Form Flow插件
-
               ### 使用方法 | How to Use
               1. 打开Form Flow面板
               2. 选择对应表单
@@ -109,24 +92,6 @@ body:
               [可选的表单配置示例]
               [Optional form configuration example]
               ```
-          render: markdown
-      validations:
-          required: true
-
-    - type: dropdown
-      id: form-category
-      attributes:
-          label: "表单类别 | Form Category"
-          description: "选择表单的主要类别 | Select the main category of your form"
-          options:
-              - "笔记管理 | Note Management"
-              - "任务管理 | Task Management"
-              - "知识整理 | Knowledge Organization"
-              - "模板工具 | Template Tools"
-              - "自动化工具 | Automation Tools"
-              - "内容插入 | Content Insertion"
-              - "格式化工具 | Formatting Tools"
-              - "其他 | Others"
       validations:
           required: true
 
