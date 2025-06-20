@@ -1,0 +1,169 @@
+title: "[Form Flow Share] "
+labels: ["Form Flow", "Share", "Show and Tell"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Form Flow 表单分享 | Form Flow Share
+        
+        欢迎分享您的Form Flow表单！请填写以下信息帮助社区成员了解和使用您的表单。
+        Welcome to share your Form Flow forms! Please fill in the following information to help community members understand and use your forms.
+
+  - type: input
+    id: form-name
+    attributes:
+      label: "表单名称 | Form Name"
+      description: "请输入您要分享的表单名称"
+      placeholder: "例如：插入 Callout | Insert Callout"
+    validations:
+      required: true
+
+  - type: textarea
+    id: form-description
+    attributes:
+      label: "表单说明 | Form Description"
+      description: "简要描述表单的功能和适用场景 | Brief description of form's purpose and use cases"
+      placeholder: |
+        请描述：
+        - 表单的主要功能
+        - 适用场景
+        - 解决的问题
+        
+        Please describe:
+        - Main functionality
+        - Use cases
+        - Problems it solves
+      render: markdown
+    validations:
+      required: true
+
+  - type: input
+    id: obsidian-version
+    attributes:
+      label: "Obsidian 兼容版本 | Obsidian Compatible Version"
+      description: "请输入支持的Obsidian最低版本"
+      placeholder: "v1.5.3+"
+      value: "v1.5.3+"
+    validations:
+      required: true
+
+  - type: input
+    id: formflow-version
+    attributes:
+      label: "Form Flow 兼容版本 | Form Flow Compatible Version"
+      description: "请输入支持的Form Flow最低版本"
+      placeholder: "v0.9.0+"
+      value: "v0.9.0+"
+    validations:
+      required: true
+
+  - type: textarea
+    id: download-files
+    attributes:
+      label: "下载文件说明 | Download Files Description"
+      description: "描述分享包中包含的文件 | Describe files included in the share package"
+      placeholder: |
+        包含文件 | Included files:
+        - `form_name.form` (主表单文件 | Main form file)
+        - `script_name.js` (可选脚本 | Optional script)
+        - `README.md` (使用说明 | Instructions)
+      render: markdown
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: features
+    attributes:
+      label: "功能特点 | Features"
+      description: "请选择表单具备的功能特点 | Please select the features of your form"
+      options:
+        - label: "支持自定义字段 | Custom fields support"
+        - label: "包含验证逻辑 | Validation logic included"
+        - label: "支持条件显示 | Conditional display support"
+        - label: "包含自动化脚本 | Automation scripts included"
+        - label: "支持模板变量 | Template variables support"
+        - label: "多语言支持 | Multi-language support"
+        - label: "移动端友好 | Mobile-friendly"
+
+  - type: textarea
+    id: custom-features
+    attributes:
+      label: "其他特色功能 | Other Special Features"
+      description: "描述其他未列出的特色功能 | Describe other special features not listed above"
+      placeholder: "✨ 特色功能描述... | Special feature description..."
+      render: markdown
+
+  - type: textarea
+    id: installation-guide
+    attributes:
+      label: "安装指南 | Installation Guide"
+      description: "提供详细的安装步骤 | Provide detailed installation steps"
+      value: |
+        ## 安装指南 | Installation Guide
+        
+        1. 解压ZIP文件到临时目录 | Unzip to temporary folder
+        2. 将文件复制到对应目录 | Copy files to:
+           - `.form` → 表单存放目录 (Form Storage Directory)
+           - `.js` → 表单脚本目录 (Form Script Directory)
+        3. 重启Obsidian或重新加载Form Flow插件 | Restart Obsidian or reload Form Flow plugin
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: demo-example
+    attributes:
+      label: "使用示例 | Demo Example"
+      description: "提供表单配置示例或使用演示 | Provide form configuration example or usage demo"
+      placeholder: |
+        ```form
+        [表单配置示例]
+        [Form configuration example]
+        ```
+        
+        或者提供截图链接 | Or provide screenshot links
+      render: markdown
+
+  - type: dropdown
+    id: form-category
+    attributes:
+      label: "表单类别 | Form Category"
+      description: "选择表单的主要类别 | Select the main category of your form"
+      options:
+        - "笔记管理 | Note Management"
+        - "任务管理 | Task Management"
+        - "知识整理 | Knowledge Organization"
+        - "模板工具 | Template Tools"
+        - "自动化工具 | Automation Tools"
+        - "其他 | Others"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "分享检查清单 | Share Checklist"
+      description: "请确认以下项目 | Please confirm the following items"
+      options:
+        - label: "✅ 已测试表单功能正常 | Form functionality tested"
+          required: true
+        - label: "✅ 已包含必要的说明文档 | Necessary documentation included"
+          required: true
+        - label: "✅ 文件已打包为ZIP格式 | Files packaged in ZIP format"
+          required: true
+        - label: "✅ 同意以开源方式分享 | Agree to share as open source"
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        ## 📝 提交须知 | Submission Notes
+        
+        - 请确保上传的文件安全无害 | Please ensure uploaded files are safe
+        - 建议在标题中使用 `[Form Flow Share]` 前缀 | Recommend using `[Form Flow Share]` prefix in title
+        - 分享的表单将遵循社区开源协议 | Shared forms will follow community open source license
+        
+        感谢您为Form Flow社区做出的贡献！🎉
+        Thank you for contributing to the Form Flow community! 🎉
