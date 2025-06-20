@@ -6,8 +6,15 @@ body:
           value: |
               # Form Flow 表单分享 | Form Flow Share
 
-              欢迎分享您的Form Flow表单！请填写以下信息帮助社区成员了解和使用您的表单。
-              Welcome to share your Form Flow forms! Please fill in the following information to help community members understand and use your forms.
+              我们希望这个模板能够：
+              - 为分享者提供简单的描述框架，而非严格限制
+              - 简化分享流程，让更多人愿意参与
+              - 帮助构建清晰的表单说明，便于社区成员理解和使用
+
+              We hope this template can:
+              - Provide a simple descriptive framework for sharers, not strict restrictions
+              - Simplify the sharing process to encourage more participation
+              - Help build clear form descriptions for community members to understand and use
 
     - type: textarea
       id: form-description
@@ -69,8 +76,6 @@ body:
           description: "请确认以下项目 | Please confirm the following items"
           options:
               - label: "✅ 已测试表单功能正常 | Form functionality tested"
-                required: true
-              - label: "✅ 已包含必要的使用说明 | Usage instructions included"
                 required: true
               - label: "✅ 文件已上传完毕 | All files uploaded"
                 required: true
