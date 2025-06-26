@@ -1,4 +1,5 @@
 import { getLanguage } from "obsidian";
+
 import {
 	BaseMessage,
 	SupportedLocales,
