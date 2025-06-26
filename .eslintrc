@@ -2,7 +2,7 @@
 	"root": true,
 	"parser": "@typescript-eslint/parser",
 	"env": { "node": true },
-	"plugins": ["@typescript-eslint", "import"],
+	"plugins": ["@typescript-eslint"],
 	"extends": [
 		"eslint:recommended",
 		"plugin:@typescript-eslint/eslint-recommended",
@@ -22,21 +22,13 @@
 
 		// custom rules
 		"@typescript-eslint/no-inferrable-types": "off",
-		"import/order": [
+		"sort-imports": [
 			"error",
 			{
-				"groups": [
-					"builtin",
-					"external",
-					"internal",
-					["parent", "sibling"],
-					"index"
-				],
-				"newlines-between": "always",
-				"alphabetize": {
-					"order": "asc",
-					"caseInsensitive": true
-				}
+				"ignoreCase": true,
+				"ignoreDeclarationSort": true,
+				"ignoreMemberSort": false,
+				"memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
 			}
 		]
 	}
