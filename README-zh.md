@@ -8,6 +8,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/RavenHogWarts/obsidian-plugin-starter?style=flat&label=星标)](https://github.com/RavenHogWarts/obsidian-plugin-starter/stargazers)
 [![Total Downloads](https://img.shields.io/github/downloads/RavenHogWarts/obsidian-plugin-starter/total?style=flat&label=总下载量)](https://github.com/RavenHogWarts/obsidian-plugin-starter/releases)
+[![Latest Downloads](https://img.shields.io/github/downloads/RavenHogWarts/obsidian-plugin-starter/latest/total?style=flat&label=最新版下载量)](https://github.com/RavenHogWarts/obsidian-plugin-starter/releases/latest)
 [![GitHub License](https://img.shields.io/github/license/RavenHogWarts/obsidian-plugin-starter?style=flat&label=许可证)](https://github.com/RavenHogWarts/obsidian-plugin-starter/blob/master/LICENSE)
 [![GitHub Issues](https://img.shields.io/github/issues/RavenHogWarts/obsidian-plugin-starter?style=flat&label=问题)](https://github.com/RavenHogWarts/obsidian-plugin-starter/issues)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/RavenHogWarts/obsidian-plugin-starter?style=flat&label=最后提交)](https://github.com/RavenHogWarts/obsidian-plugin-starter/commits/master)

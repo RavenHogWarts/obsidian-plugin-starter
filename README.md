@@ -8,6 +8,7 @@ The repo depends on the latest plugin API (obsidian.d.ts) in Typescript Definiti
 
 [![GitHub stars](https://img.shields.io/github/stars/RavenHogWarts/obsidian-plugin-starter?style=flat&label=Stars)](https://github.com/RavenHogWarts/obsidian-plugin-starter/stargazers)
 [![Total Downloads](https://img.shields.io/github/downloads/RavenHogWarts/obsidian-plugin-starter/total?style=flat&label=Total%20Downloads)](https://github.com/RavenHogWarts/obsidian-plugin-starter/releases)
+[![Latest Downloads](https://img.shields.io/github/downloads/RavenHogWarts/obsidian-plugin-starter/latest/total?style=flat&label=Latest%20Downloads)](https://github.com/RavenHogWarts/obsidian-plugin-starter/releases/latest)
 [![GitHub License](https://img.shields.io/github/license/RavenHogWarts/obsidian-plugin-starter?style=flat&label=License)](https://github.com/RavenHogWarts/obsidian-plugin-starter/blob/master/LICENSE)
 [![GitHub Issues](https://img.shields.io/github/issues/RavenHogWarts/obsidian-plugin-starter?style=flat&label=Issues)](https://github.com/RavenHogWarts/obsidian-plugin-starter/issues)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/RavenHogWarts/obsidian-plugin-starter?style=flat&label=Last%20Commit)](https://github.com/RavenHogWarts/obsidian-plugin-starter/commits/master)
