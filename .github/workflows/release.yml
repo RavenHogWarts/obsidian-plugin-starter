@@ -7,6 +7,7 @@ on:
 
 permissions:
     contents: write
+    discussions: write
 
 env:
     PLUGIN_ID: obsidian-plugin-starter # 插件ID
@@ -46,61 +47,22 @@ jobs:
 
             - name: Create Release
               id: create_release
-              uses: actions/create-release@v1
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              uses: softprops/action-gh-release@v2
               with:
-                  tag_name: ${{ github.ref }}
-                  release_name: ${{ github.ref }}
+                  tag_name: ${{ github.ref_name }}
+                  name: ${{ github.ref_name }}
                   draft: false
                   prerelease: ${{ contains(github.ref, 'beta') }}
+                  generate_release_notes: true
+                  discussion_category_name: "Announcements"
                   body: |
                       ${{ contains(github.ref, 'beta') && '🚧 This is a beta release' || '🎉 This is a stable release' }}
 
                       **Version:** ${{ github.ref_name }}
-
-                      ${{ steps.changelog.outputs.changelog }}
-
-            - name: Upload zip file
-              id: upload-zip
-              uses: actions/upload-release-asset@v1
+                  files: |
+                      ${{ env.PLUGIN_ID }}.zip
+                      main.js
+                      manifest.json
+                      styles.css
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              with:
-                  upload_url: ${{ steps.create_release.outputs.upload_url }}
-                  asset_path: ./${{ env.PLUGIN_ID }}.zip
-                  asset_name: ${{ env.PLUGIN_ID }}.zip
-                  asset_content_type: application/zip
-
-            - name: Upload main.js
-              id: upload-main
-              uses: actions/upload-release-asset@v1
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              with:
-                  upload_url: ${{ steps.create_release.outputs.upload_url }}
-                  asset_path: ./main.js
-                  asset_name: main.js
-                  asset_content_type: text/javascript
-
-            - name: Upload manifest.json
-              id: upload-manifest
-              uses: actions/upload-release-asset@v1
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              with:
-                  upload_url: ${{ steps.create_release.outputs.upload_url }}
-                  asset_path: ./manifest.json
-                  asset_name: manifest.json
-                  asset_content_type: application/json
-
-            - name: Upload styles.css
-              id: upload-styles
-              uses: actions/upload-release-asset@v1
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              with:
-                  upload_url: ${{ steps.create_release.outputs.upload_url }}
-                  asset_path: ./styles.css
-                  asset_name: styles.css
-                  asset_content_type: text/css
