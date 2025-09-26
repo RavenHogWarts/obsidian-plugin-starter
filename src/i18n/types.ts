@@ -13,7 +13,7 @@ interface IBaseSettingsItem {
 	name: string;
 	desc: string;
 }
-type SettingsItem<T = Record<string, never>> = IBaseSettingsItem & T;
+export type SettingsItem<T = Record<string, never>> = IBaseSettingsItem & T;
 
 // 定义翻译结构类型
 export type BaseMessage = {
