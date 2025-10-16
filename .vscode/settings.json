@@ -22,5 +22,6 @@
 	},
 	"files.exclude": {
 		"**/*.min.css": true
-	}
+	},
+	"typescript.tsdk": "node_modules\\typescript\\lib"
 }
