@@ -5,7 +5,7 @@ import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const projectRoot = __dirname;
+const projectRoot = join(__dirname, "..");
 
 dotenv.config({ quiet: true });
 const VAULT_PATH = process.env.VAULT_PATH;
