@@ -5,7 +5,7 @@ import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const pluginDir = join(__dirname, "..");
+const projectRoot = __dirname;
 
 dotenv.config({ quiet: true });
 const VAULT_PATH = process.env.VAULT_PATH;
@@ -18,25 +18,39 @@ if (!VAULT_PATH) {
 const fileConfig = [
 	{
 		name: "manifest.json",
-		sourcePath: pluginDir,
+		sourcePath: projectRoot,
 	},
 	{
 		name: "main.js",
-		sourcePath: pluginDir,
+		sourcePath: projectRoot,
 	},
 	{
 		name: "styles.css",
-		sourcePath: pluginDir,
+		sourcePath: projectRoot,
 	},
 ];
 
-const manifestPath = join(projectRootDir, "manifest.json");
-
 async function copyToVault() {
 	try {
+		// 获取 manifest.json 配置，从 fileConfig 中找到对应文件
+		const manifestConfig = fileConfig.find(
+			(file) => file.name === "manifest.json"
+		);
+		if (!manifestConfig) {
+			throw new Error("manifest.json not found in fileConfig");
+		}
+
+		const manifestPath = join(
+			manifestConfig.sourcePath,
+			manifestConfig.name
+		);
 		const manifestContent = await readFile(manifestPath, "utf8");
 		const manifest = JSON.parse(manifestContent);
 		const pluginId = manifest.id;
+
+		if (!pluginId) {
+			throw new Error("Plugin ID not found in manifest.json");
+		}
 
 		const targetPluginDir = join(
 			VAULT_PATH,
@@ -54,9 +68,17 @@ async function copyToVault() {
 		for (const fileInfo of fileConfig) {
 			const sourcePath = join(fileInfo.sourcePath, fileInfo.name);
 			const destPath = join(targetPluginDir, fileInfo.name);
+
+			if (!existsSync(sourcePath)) {
+				console.warn(`警告: 源文件不存在 ${sourcePath}`);
+				continue;
+			}
+
 			await copyFile(sourcePath, destPath);
-			console.log(`复制文件: ${fileInfo.name} -> ${destPath}`);
+			// console.log(`复制文件: ${fileInfo.name} -> ${destPath}`);
 		}
+
+		console.log(`插件 ${pluginId} 已成功复制到 vault`);
 	} catch (error) {
 		console.error("复制文件时出错:", error);
 		process.exit(1);
