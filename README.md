@@ -66,11 +66,6 @@ This project is licensed under the xxx LICENSE - see the [LICENSE](LICENSE) file
 
 # Files to Modify
 
-Execute the following command to remove the `.vscode` folder from Git tracking while keeping the local files:
-```
-git rm -r --cached .vscode
-```
-
 When developing or customizing the plugin, the following files may need to be modified:
 
 - [config.yml](./.github/ISSUE_TEMPLATE/config.yml)

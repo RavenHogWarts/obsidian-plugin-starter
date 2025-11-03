@@ -66,11 +66,6 @@
 
 # 需要修改的文件
 
-执行下面的命令，将 `.vscode` 文件夹从 Git 跟踪中移除，但保留本地文件
-```
-git rm -r --cached .vscode
-```
-
 在开发或自定义插件时，以下文件可能需要修改：
 
 - [config.yml](./.github/ISSUE_TEMPLATE/config.yml)
