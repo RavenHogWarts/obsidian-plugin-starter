@@ -28,7 +28,7 @@
 	},
 	"devDependencies": {
 		"@types/jest": "^30.0.0",
-		"@types/node": "^25.0.0",
+		"@types/node": "^25.0.2",
 		"@types/react": "^19.2.7",
 		"@types/react-dom": "^19.2.3",
 		"@typescript-eslint/eslint-plugin": "8.49.0",
@@ -36,12 +36,12 @@
 		"builtin-modules": "5.0.0",
 		"conventional-changelog-cli": "^5.0.0",
 		"esbuild": "0.27.1",
-		"eslint": "^9.39.1",
+		"eslint": "^9.39.2",
 		"eslint-plugin-obsidianmd": "^0.1.9",
 		"fs-extra": "^11.3.2",
 		"globals": "^16.5.0",
 		"jest": "^30.2.0",
-		"obsidian": "latest",
+		"obsidian": "^1.11.0",
 		"postcss": "^8.5.6",
 		"postcss-nesting": "^13.0.2",
 		"ts-jest": "^29.4.6",
@@ -50,8 +50,8 @@
 	},
 	"dependencies": {
 		"dotenv": "^17.2.3",
-		"lucide-react": "^0.560.0",
-		"react": "^19.2.1",
-		"react-dom": "^19.2.1"
+		"lucide-react": "^0.561.0",
+		"react": "^19.2.3",
+		"react-dom": "^19.2.3"
 	}
 }
