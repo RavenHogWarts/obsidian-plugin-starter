@@ -39,10 +39,22 @@ jobs:
                   npm install -g yarn
                   yarn
                   yarn run build --if-present
+                  
+                  # 检查 styles.css 是否存在
+                  if [ -f "styles.css" ]; then
+                    echo "✅ styles.css found"
+                    echo "has_styles=true" >> $GITHUB_OUTPUT
+                  else
+                    echo "⚠️ styles.css not found, will be skipped in release"
+                    echo "has_styles=false" >> $GITHUB_OUTPUT
+                  fi
+                  
+                  # 打包插件目录
                   mkdir ${{ env.PLUGIN_ID }}
-                  cp main.js manifest.json styles.css ${{ env.PLUGIN_ID }}
-                  zip -r ${{ env.PLUGIN_ID }}.zip ${{ env.PLUGIN_ID }}
-                  ls
+                  cp main.js manifest.json ${{ env.PLUGIN_ID }}
+                  [ -f "styles.css" ] && cp styles.css ${{ env.PLUGIN_ID }}
+                  zip -r ${{ env.PLUGIN_ID }}-${{ github.ref_name }}.zip ${{ env.PLUGIN_ID }}
+                  ls -la
                   echo "tag_name=$(git tag --sort version:refname | tail -n 1)" >> $GITHUB_OUTPUT
 
             - name: Create Release
@@ -60,9 +72,9 @@ jobs:
 
                       **Version:** ${{ github.ref_name }}
                   files: |
-                      ${{ env.PLUGIN_ID }}.zip
+                      ${{ env.PLUGIN_ID }}-${{ github.ref_name }}.zip
                       main.js
                       manifest.json
-                      styles.css
+                      ${{ steps.build.outputs.has_styles == 'true' && 'styles.css' || '' }}
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

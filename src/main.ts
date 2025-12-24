@@ -1,4 +1,4 @@
-import "@styles/styles";
+// import "@styles/styles";
 import { App, Editor, MarkdownView, Modal, Notice, Plugin } from "obsidian";
 import { PluginSettingTab } from "./settings/PluginSettingTab";
 import SettingsStore from "./settings/SettingsStore";
