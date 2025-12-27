@@ -12,6 +12,8 @@
 		"changelog:all": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 -n ./scripts/changelog-option.js",
 		"lint": "eslint .",
 		"lint:fix": "eslint . --fix",
+		"i18n:typesafe": "typesafe-i18n",
+		"i18n:sync": "node scripts/sync-i18n-keys.mjs",
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"link:data": "node scripts/link-data.mjs"
@@ -49,6 +51,7 @@
 		"dotenv": "^17.2.3",
 		"lucide-react": "^0.561.0",
 		"react": "^19.2.3",
-		"react-dom": "^19.2.3"
+		"react-dom": "^19.2.3",
+		"typesafe-i18n": "^5.26.2"
 	}
 }
