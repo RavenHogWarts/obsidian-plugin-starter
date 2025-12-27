@@ -144,6 +144,16 @@ function main() {
     // 同步其他语言
     for (const locale of locales.filter(l => l !== baseLocale)) {
         const filePath = path.join(I18N_DIR, locale, 'index.ts');
+        
+        // 检查文件是否存在，不存在则生成初始文件
+        if (!fs.existsSync(filePath)) {
+            const initialContent = generateContent(locale, deepMerge(baseObj, {}));
+            fs.writeFileSync(filePath, initialContent, 'utf-8');
+            log.success(`${locale} (新建，+${baseKeys.size} 个键)`);
+            syncedCount++;
+            continue;
+        }
+
         const targetObj = extractTranslationObject(filePath);
 
         if (!targetObj) {
