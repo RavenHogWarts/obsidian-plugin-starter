@@ -2,6 +2,6 @@ import type { BaseTranslation } from '../i18n-types'
 
 const zh = {
 	"obsidian-plugin-starter": "Obsidian 插件入门",
-} satisfies BaseTranslation
+} satisfies BaseTranslation;
 
-export default zh
+export default zh;

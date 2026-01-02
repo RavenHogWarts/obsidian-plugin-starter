@@ -111,9 +111,9 @@ function generateContent(locale, obj) {
     const varName = locale.replace(/-/g, '_');
     return `import type { BaseTranslation } from '../i18n-types'
 
-const ${varName} = ${toTypeScript(obj)} satisfies BaseTranslation
+const ${varName} = ${toTypeScript(obj)} satisfies BaseTranslation;
 
-export default ${varName}
+export default ${varName};
 `;
 }
 
