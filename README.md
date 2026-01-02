@@ -1,6 +1,7 @@
 English | [中文](https://github.com/RavenHogWarts/obsidian-plugin-starter/blob/master/README-zh.md)
 
 # Obsidian Sample Plugin
+
 This is a sample plugin for Obsidian (https://obsidian.md).
 
 This project uses Typescript to provide type checking and documentation.
@@ -14,6 +15,7 @@ The repo depends on the latest plugin API (obsidian.d.ts) in Typescript Definiti
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/RavenHogWarts/obsidian-plugin-starter?style=flat&label=Last%20Commit)](https://github.com/RavenHogWarts/obsidian-plugin-starter/commits/master)
 
 ## Installation
+
 ### Community plugin market installation
 
 [Click to install](obsidian://show-plugin?id=obsidian-plugin-starter), or:
@@ -38,23 +40,26 @@ The repo depends on the latest plugin API (obsidian.d.ts) in Typescript Definiti
 
 ## Development
 
-- Clone this repo
-- Make sure your NodeJS is at least v16 (`node --version`)
-- `npm i` or `yarn` to install dependencies
-- `npm run dev` to start compilation in watch mode
-- `npm run build` to build the plugin
-- `npm run build:local` to build the plugin and copy it to your vault's plugins folder(need create a .env file in the project root and add the line: VAULT_PATH=/path/to/your/vault)
-- `npm run version` to bump the version number and update the manifest.json, version.json, package.json
-- `npm run release` to build the plugin and bump the version number
+-   Clone this repo
+-   Make sure your NodeJS is at least v16 (`node --version`)
+-   `npm i` or `yarn` to install dependencies
+-   `npm run dev` to start compilation in watch mode
+-   `npm run build` to build the plugin
+-   `npm run build:local` to build the plugin and copy it to your vault's plugins folder(need create a .env file in the project root and add the line: VAULT_PATH=/path/to/your/vault)
+-   `npm run version` to bump the version number and update the manifest.json, version.json, package.json
+-   `npm run release` to build the plugin and bump the version number
 
 ## Support
 
 If you encounter any issues or have suggestions:
-- [Open an issue](https://github.com/RavenHogWarts/obsidian-plugin-starter/issues) on GitHub
-- [Join the discussion](https://github.com/RavenHogWarts/obsidian-plugin-starter/discussions) for questions and ideas
+
+-   [Open an issue](https://github.com/RavenHogWarts/obsidian-plugin-starter/issues) on GitHub
+-   [Join the discussion](https://github.com/RavenHogWarts/obsidian-plugin-starter/discussions) for questions and ideas
 
 If you find this plugin helpful, you can support the development through:
-- [afdian](https://afdian.com/a/ravenhogwarts)
+
+-   [ko-fi](https://ko-fi.com/ravenhogwarts)
+-   [afdian](https://afdian.com/a/ravenhogwarts)
 
 ## License
 
@@ -68,9 +73,9 @@ This project is licensed under the xxx LICENSE - see the [LICENSE](LICENSE) file
 
 When developing or customizing the plugin, the following files may need to be modified:
 
-- [config.yml](./.github/ISSUE_TEMPLATE/config.yml)
-- [release.yml](./.github/workflows/release.yml)
-- [manifest.json](./manifest.json)
-- [manifest-beta.json](./manifest-beta.json)
-- [package.json](./package.json)
-- [CONTRIBUTING.md](./CONTRIBUTING.md)
+-   [config.yml](./.github/ISSUE_TEMPLATE/config.yml)
+-   [release.yml](./.github/workflows/release.yml)
+-   [manifest.json](./manifest.json)
+-   [manifest-beta.json](./manifest-beta.json)
+-   [package.json](./package.json)
+-   [CONTRIBUTING.md](./CONTRIBUTING.md)

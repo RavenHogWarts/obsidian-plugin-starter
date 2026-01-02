@@ -1,6 +1,7 @@
 中文 | [English](https://github.com/RavenHogWarts/obsidian-plugin-starter/blob/master/README.md)
 
 # Obsidian 示例插件
+
 这是一个用于 Obsidian (https://obsidian.md) 的示例插件。
 
 该项目使用 Typescript 提供类型检查和文档支持。
@@ -14,6 +15,7 @@
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/RavenHogWarts/obsidian-plugin-starter?style=flat&label=最后提交)](https://github.com/RavenHogWarts/obsidian-plugin-starter/commits/master)
 
 ## 安装
+
 ### 社区插件市场安装
 
 [点击安装](obsidian://show-plugin?id=obsidian-plugin-starter)，或按以下步骤操作：
@@ -38,23 +40,26 @@
 
 ## 开发指南
 
-- 克隆此仓库
-- 确保你的 NodeJS 版本至少为 v16 (`node --version`)
-- 使用 `npm i` 或 `yarn` 安装依赖
-- 使用 `npm run dev` 启动开发模式并进行实时编译
-- 运行 `npm run build` 构建插件
-- 运行 `npm run build:local` 构建插件并将其复制到您的 vault 插件文件夹（需要在项目根目录创建一个 `.env` 文件并添加：`VAULT_PATH=/path/to/your/vault`）
-- 运行 `npm run version` 更新版本号并更新 manifest.json、version.json、package.json
-- 运行 `npm run release` 构建插件并更新版本号
+-   克隆此仓库
+-   确保你的 NodeJS 版本至少为 v16 (`node --version`)
+-   使用 `npm i` 或 `yarn` 安装依赖
+-   使用 `npm run dev` 启动开发模式并进行实时编译
+-   运行 `npm run build` 构建插件
+-   运行 `npm run build:local` 构建插件并将其复制到您的 vault 插件文件夹（需要在项目根目录创建一个 `.env` 文件并添加：`VAULT_PATH=/path/to/your/vault`）
+-   运行 `npm run version` 更新版本号并更新 manifest.json、version.json、package.json
+-   运行 `npm run release` 构建插件并更新版本号
 
 ## 支持与帮助
 
 如果你遇到任何问题或有建议：
-- [在 GitHub 上提交问题](https://github.com/RavenHogWarts/obsidian-plugin-starter/issues)
-- [加入讨论](https://github.com/RavenHogWarts/obsidian-plugin-starter/discussions) 提出问题或分享想法
+
+-   [在 GitHub 上提交问题](https://github.com/RavenHogWarts/obsidian-plugin-starter/issues)
+-   [加入讨论](https://github.com/RavenHogWarts/obsidian-plugin-starter/discussions) 提出问题或分享想法
 
 如果你觉得这个插件对你有帮助，可以通过以下方式支持开发：
-- [爱发电](https://afdian.com/a/ravenhogwarts)
+
+-   [爱发电](https://afdian.com/a/ravenhogwarts)
+-   [ko-fi](https://ko-fi.com/ravenhogwarts)
 
 ## 许可证
 
@@ -68,9 +73,9 @@
 
 在开发或自定义插件时，以下文件可能需要修改：
 
-- [config.yml](./.github/ISSUE_TEMPLATE/config.yml)
-- [release.yml](./.github/workflows/release.yml)
-- [manifest.json](./manifest.json)
-- [manifest-beta.json](./manifest-beta.json)
-- [package.json](./package.json)
-- [CONTRIBUTING.md](./CONTRIBUTING.md)
+-   [config.yml](./.github/ISSUE_TEMPLATE/config.yml)
+-   [release.yml](./.github/workflows/release.yml)
+-   [manifest.json](./manifest.json)
+-   [manifest-beta.json](./manifest-beta.json)
+-   [package.json](./package.json)
+-   [CONTRIBUTING.md](./CONTRIBUTING.md)
