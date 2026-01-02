@@ -40,14 +40,30 @@
 
 ## 开发指南
 
--   克隆此仓库
--   确保你的 NodeJS 版本至少为 v16 (`node --version`)
--   使用 `npm i` 或 `yarn` 安装依赖
--   使用 `npm run dev` 启动开发模式并进行实时编译
--   运行 `npm run build` 构建插件
--   运行 `npm run build:local` 构建插件并将其复制到您的 vault 插件文件夹（需要在项目根目录创建一个 `.env` 文件并添加：`VAULT_PATH=/path/to/your/vault`）
--   运行 `npm run version` 更新版本号并更新 manifest.json、version.json、package.json
--   运行 `npm run release` 构建插件并更新版本号
+### 快速开始
+
+-   确保你的 NodeJS 版本至少为 v18 (`node --version`)
+-   克隆此仓库并安装依赖：`npm install`
+-   使用 `npm run dev` 启动开发模式进行实时编译
+-   使用 `npm run build:local` 构建并复制到你的 vault（需要配置 `.env` 文件）
+
+### 详细贡献指南
+
+想要参与项目开发？请查看我们的 **[贡献指南](./CONTRIBUTING.md)**，其中包含：
+
+- 详细的环境设置步骤
+- 完整的开发工作流程
+- 代码质量标准
+- 国际化 (i18n) 指导
+- Pull Request 流程
+- 提交规范
+
+### 常用命令
+
+- `npm run dev` - 开发模式（监听文件变化）
+- `npm run build` - 生产构建
+- `npm run test` - 运行测试
+- `npm run lint` - 代码质量检查
 
 ## 支持与帮助
 

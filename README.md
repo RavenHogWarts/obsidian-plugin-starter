@@ -40,14 +40,30 @@ The repo depends on the latest plugin API (obsidian.d.ts) in Typescript Definiti
 
 ## Development
 
--   Clone this repo
--   Make sure your NodeJS is at least v16 (`node --version`)
--   `npm i` or `yarn` to install dependencies
+### Quick Start
+
+-   Make sure your NodeJS is at least v18 (`node --version`)
+-   Clone this repo and install dependencies: `npm install`
 -   `npm run dev` to start compilation in watch mode
--   `npm run build` to build the plugin
--   `npm run build:local` to build the plugin and copy it to your vault's plugins folder(need create a .env file in the project root and add the line: VAULT_PATH=/path/to/your/vault)
--   `npm run version` to bump the version number and update the manifest.json, version.json, package.json
--   `npm run release` to build the plugin and bump the version number
+-   `npm run build:local` to build and copy to your vault (requires `.env` configuration)
+
+### Detailed Contributing Guide
+
+Want to contribute to this project? Please check our **[Contributing Guide](./CONTRIBUTING.md)** which includes:
+
+- Detailed environment setup steps
+- Complete development workflow
+- Code quality standards
+- Internationalization (i18n) guidelines
+- Pull Request process
+- Commit conventions
+
+### Common Commands
+
+- `npm run dev` - Development mode (watch mode)
+- `npm run build` - Production build
+- `npm run test` - Run tests
+- `npm run lint` - Code quality check
 
 ## Support
 
