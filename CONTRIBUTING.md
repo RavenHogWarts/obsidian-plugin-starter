@@ -371,12 +371,6 @@ Feature requests are welcome. Please provide:
 - `test`: 添加或更新测试
 - `chore`: 构建过程或辅助工具的变更
 
-您可以使用我们的 commitizen 设置来帮助正确格式化提交：
-```bash
-git add .
-npx cz
-```
-
 ## 报告错误
 
 报告错误时，请包括：
