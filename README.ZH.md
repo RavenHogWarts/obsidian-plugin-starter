@@ -42,10 +42,10 @@
 
 ### 快速开始
 
--   确保你的 NodeJS 版本至少为 v18 (`node --version`)
--   克隆此仓库并安装依赖：`npm install`
--   使用 `npm run dev` 启动开发模式进行实时编译
--   使用 `npm run build:local` 构建并复制到你的 vault（需要配置 `.env` 文件）
+- 确保你的 NodeJS 版本至少为 v18 (`node --version`)
+- 克隆此仓库并安装依赖：`npm install`
+- 使用 `npm run dev` 启动开发模式进行实时编译
+- 使用 `npm run build:local` 构建并复制到你的 vault（需要配置 `.env` 文件）
 
 ### 详细贡献指南
 
@@ -69,13 +69,13 @@
 
 如果你遇到任何问题或有建议：
 
--   [在 GitHub 上提交问题](https://github.com/RavenHogWarts/obsidian-plugin-starter/issues)
--   [加入讨论](https://github.com/RavenHogWarts/obsidian-plugin-starter/discussions) 提出问题或分享想法
+- [在 GitHub 上提交问题](https://github.com/RavenHogWarts/obsidian-plugin-starter/issues)
+- [加入讨论](https://github.com/RavenHogWarts/obsidian-plugin-starter/discussions) 提出问题或分享想法
 
 如果你觉得这个插件对你有帮助，可以通过以下方式支持开发：
 
--   [爱发电](https://afdian.com/a/ravenhogwarts)
--   [ko-fi](https://ko-fi.com/ravenhogwarts)
+- [爱发电](https://afdian.com/a/ravenhogwarts)
+- [ko-fi](https://ko-fi.com/ravenhogwarts)
 
 ## 许可证
 
@@ -89,9 +89,9 @@
 
 在开发或自定义插件时，以下文件可能需要修改：
 
--   [config.yml](./.github/ISSUE_TEMPLATE/config.yml)
--   [release.yml](./.github/workflows/release.yml)
--   [manifest.json](./manifest.json)
--   [manifest-beta.json](./manifest-beta.json)
--   [package.json](./package.json)
--   [CONTRIBUTING.md](./CONTRIBUTING.md)
+- [config.yml](./.github/ISSUE_TEMPLATE/config.yml)
+- [release.yml](./.github/workflows/release.yml)
+- [manifest.json](./manifest.json)
+- [manifest-beta.json](./manifest-beta.json)
+- [package.json](./package.json)
+- [CONTRIBUTING.md](./CONTRIBUTING.md)

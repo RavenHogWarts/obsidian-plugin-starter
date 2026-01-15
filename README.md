@@ -1,4 +1,4 @@
-English | [中文](https://github.com/RavenHogWarts/obsidian-plugin-starter/blob/master/README-zh.md)
+English | [中文](https://github.com/RavenHogWarts/obsidian-plugin-starter/blob/master/README.ZH.md)
 
 # Obsidian Sample Plugin
 
@@ -42,10 +42,10 @@ The repo depends on the latest plugin API (obsidian.d.ts) in Typescript Definiti
 
 ### Quick Start
 
--   Make sure your NodeJS is at least v18 (`node --version`)
--   Clone this repo and install dependencies: `npm install`
--   `npm run dev` to start compilation in watch mode
--   `npm run build:local` to build and copy to your vault (requires `.env` configuration)
+- Make sure your NodeJS is at least v18 (`node --version`)
+- Clone this repo and install dependencies: `npm install`
+- `npm run dev` to start compilation in watch mode
+- `npm run build:local` to build and copy to your vault (requires `.env` configuration)
 
 ### Detailed Contributing Guide
 
@@ -69,13 +69,13 @@ Want to contribute to this project? Please check our **[Contributing Guide](./CO
 
 If you encounter any issues or have suggestions:
 
--   [Open an issue](https://github.com/RavenHogWarts/obsidian-plugin-starter/issues) on GitHub
--   [Join the discussion](https://github.com/RavenHogWarts/obsidian-plugin-starter/discussions) for questions and ideas
+- [Open an issue](https://github.com/RavenHogWarts/obsidian-plugin-starter/issues) on GitHub
+- [Join the discussion](https://github.com/RavenHogWarts/obsidian-plugin-starter/discussions) for questions and ideas
 
 If you find this plugin helpful, you can support the development through:
 
--   [ko-fi](https://ko-fi.com/ravenhogwarts)
--   [afdian](https://afdian.com/a/ravenhogwarts)
+- [ko-fi](https://ko-fi.com/ravenhogwarts)
+- [afdian](https://afdian.com/a/ravenhogwarts)
 
 ## License
 
@@ -89,9 +89,9 @@ This project is licensed under the xxx LICENSE - see the [LICENSE](LICENSE) file
 
 When developing or customizing the plugin, the following files may need to be modified:
 
--   [config.yml](./.github/ISSUE_TEMPLATE/config.yml)
--   [release.yml](./.github/workflows/release.yml)
--   [manifest.json](./manifest.json)
--   [manifest-beta.json](./manifest-beta.json)
--   [package.json](./package.json)
--   [CONTRIBUTING.md](./CONTRIBUTING.md)
+- [config.yml](./.github/ISSUE_TEMPLATE/config.yml)
+- [release.yml](./.github/workflows/release.yml)
+- [manifest.json](./manifest.json)
+- [manifest-beta.json](./manifest-beta.json)
+- [package.json](./package.json)
+- [CONTRIBUTING.md](./CONTRIBUTING.md)
