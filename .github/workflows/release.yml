@@ -7,7 +7,6 @@ on:
 
 permissions:
     contents: write
-    discussions: write
 
 env:
     PLUGIN_ID: obsidian-plugin-starter # 插件ID
@@ -39,7 +38,7 @@ jobs:
                   npm install -g yarn
                   yarn
                   yarn run build --if-present
-                  
+
                   # 检查 styles.css 是否存在
                   if [ -f "styles.css" ]; then
                     echo "✅ styles.css found"
@@ -48,7 +47,7 @@ jobs:
                     echo "⚠️ styles.css not found, will be skipped in release"
                     echo "has_styles=false" >> $GITHUB_OUTPUT
                   fi
-                  
+
                   # 打包插件目录
                   mkdir ${{ env.PLUGIN_ID }}
                   cp main.js manifest.json ${{ env.PLUGIN_ID }}
@@ -66,7 +65,6 @@ jobs:
                   draft: false
                   prerelease: ${{ contains(github.ref, 'beta') }}
                   generate_release_notes: true
-                  discussion_category_name: "Announcements"
                   body: |
                       ${{ contains(github.ref, 'beta') && '🚧 This is a beta release' || '🎉 This is a stable release' }}
 
